@@ -1,6 +1,6 @@
 .terraform/*
 .terraform.lock*
-.exe*
+.terraform.exe
 ./*
 .git/*
 ../*

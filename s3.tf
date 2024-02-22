@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "akshaitestingmetaargs"
+  bucket = "devopsb28testingmetaargs001"
 
   tags = {
-    Name        = "akshaitestingmetaargs"
+    Name        = "devopsb28testingmetaargs001"
     Environment = "Dev"
   }
   lifecycle {

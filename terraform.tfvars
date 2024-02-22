@@ -1,5 +1,5 @@
 vpc_name             = "superstar"
-cidr_block           = "172.28.0.0/16"
+cidr_block           = "172.28.0.0/24"
 public_subnet1_cidr  = "172.28.32.0/24"
 public_subnet1_name  = "Public-Subnet-1"
 public_subnet2_cidr  = "172.28.64.0/24"

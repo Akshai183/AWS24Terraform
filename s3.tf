@@ -1,3 +1,4 @@
+terraform {
 resource "aws_s3_bucket" "b" {
   bucket = "devopsb28testingmetaargs001"
 
@@ -8,4 +9,5 @@ resource "aws_s3_bucket" "b" {
   lifecycle {
     create_before_destroy = true
   }
+}
 }

@@ -1,3 +1,4 @@
+terraform {
 resource "aws_subnet" "subnet1-public1" {
   vpc_id            = aws_vpc.default.id
   cidr_block        = var.public_subnet1_cidr
@@ -28,3 +29,6 @@ resource "aws_subnet" "subnet3-public1" {
   }
 
 }
+}
+
+  

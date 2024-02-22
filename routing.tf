@@ -1,3 +1,4 @@
+terraform {
 resource "aws_route_table" "terraform-public" {
   vpc_id = aws_vpc.default.id
 
@@ -24,4 +25,5 @@ resource "aws_route_table_association" "terraform-public2" {
 resource "aws_route_table_association" "terraform-public3" {
   subnet_id      = aws_subnet.subnet3-public.id
   route_table_id = aws_route_table.terraform-public.id
+}
 }

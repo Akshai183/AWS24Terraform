@@ -1,3 +1,4 @@
+terraform {
 resource "aws_instance" "web-1" {
   ami                         = var.imagename
   availability_zone           = "us-east-1a"
@@ -16,4 +17,5 @@ resource "aws_instance" "web-1" {
     prevent_destroy = false
     ignore_changes  = [tags]
   }
+}
 }

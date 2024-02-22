@@ -1,3 +1,4 @@
+terraform {
 resource "aws_security_group" "allow_all" {
   name        = "allow_all"
   description = "Allow all inbound traffic"
@@ -19,4 +20,5 @@ resource "aws_security_group" "allow_all" {
   lifecycle {
     ignore_changes = [ingress, egress]
   }
+}
 }

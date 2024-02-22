@@ -1,3 +1,4 @@
+terraform {
 resource "aws_subnet" "subnet1-private" {
   vpc_id            = aws_vpc.default.id
   cidr_block        = var.private_subnet1_cidr
@@ -26,4 +27,5 @@ resource "aws_subnet" "subnet3-private" {
   tags = {
     Name = "${var.private_subnet3_name}"
   }
+}
 }

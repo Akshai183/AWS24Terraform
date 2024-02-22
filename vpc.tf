@@ -1,3 +1,4 @@
+terraform {
 resource "aws_vpc" "default" {
   cidr_block = var.cidr_block
   tags = {
@@ -12,3 +13,6 @@ resource "aws_internet_gateway" "default" {
     Name = "${var.vpc_name}-IGW"
   }
 }
+}
+
+

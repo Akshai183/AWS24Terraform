@@ -13,4 +13,4 @@ variable "private_subnet2_cidr" {}
 variable "private_subnet3_name" {}
 variable "private_subnet3_cidr" {}
 variable "Main_Routing_Table" {}
-
+variable "imagename" {}

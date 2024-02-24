@@ -5,4 +5,8 @@ resource "aws_s3_bucket" "b" {
     Name        = "s3terrafrom183"
     Environment = "Dev"
   }
+  #     lifecycle {
+  #   create_before_destroy = true
+  #  }
+  #
 }
